@@ -1,0 +1,12 @@
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\bin\Debug\net7.0\WMG.DVDCentral.BL.Models.deps.json
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\bin\Debug\net7.0\WMG.DVDCentral.BL.Models.dll
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\bin\Debug\net7.0\WMG.DVDCentral.BL.Models.pdb
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\obj\Debug\net7.0\WMG.DVDCentral.BL.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\obj\Debug\net7.0\WMG.DVDCentral.BL.Models.AssemblyInfoInputs.cache
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\obj\Debug\net7.0\WMG.DVDCentral.BL.Models.AssemblyInfo.cs
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\obj\Debug\net7.0\WMG.DVDCentral.BL.Models.csproj.CoreCompileInputs.cache
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\obj\Debug\net7.0\WMG.DVDCentral.BL.Models.sourcelink.json
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\obj\Debug\net7.0\WMG.DVDCentral.BL.Models.dll
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\obj\Debug\net7.0\refint\WMG.DVDCentral.BL.Models.dll
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\obj\Debug\net7.0\WMG.DVDCentral.BL.Models.pdb
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.BL.Models\obj\Debug\net7.0\ref\WMG.DVDCentral.BL.Models.dll

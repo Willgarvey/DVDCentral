@@ -1,0 +1,72 @@
+﻿@model WMG.DVDCentral.BL.Models.ShoppingCart
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Items[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Items[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Items[0].Cost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Items[0].InStkQty)
+            </th>
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Items) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+            <td>
+                1 <!-- All items in shopping cart will be a Quantity of 1 -->
+            </td>
+            <td>
+                @Html.ActionLink("Remove", "Remove", new { id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div class="row">
+    <div class="col m-2">
+        <dl class="row m-2">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.SubTotal)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.SubTotal)
+            </dd>
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Tax)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Tax)
+            </dd>
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Total)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Total)<br/>
+            </dd>
+        </dl>
+        <!-- Check out button location possibility-->
+        <a class="btn btn-sm btn-primary" type="button" asp-controller="ShoppingCart" asp-action="AssignToCustomer">Check Out</a>
+    </div>
+</div>

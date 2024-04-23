@@ -1,0 +1,15 @@
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\bin\Debug\net7.0\WMG.DVDCentral.PL.deps.json
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\bin\Debug\net7.0\WMG.DVDCentral.PL.runtimeconfig.json
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\bin\Debug\net7.0\WMG.DVDCentral.PL.dll
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\bin\Debug\net7.0\WMG.DVDCentral.PL.pdb
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\WMG.DVDCentral.PL.csproj.AssemblyReference.cache
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\WMG.DVDCentral.PL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\WMG.DVDCentral.PL.AssemblyInfoInputs.cache
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\WMG.DVDCentral.PL.AssemblyInfo.cs
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\WMG.DVDCentral.PL.csproj.CoreCompileInputs.cache
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\WMG.DVDCentral.PL.sourcelink.json
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\WMG.DVDCentral.PL.dll
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\refint\WMG.DVDCentral.PL.dll
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\WMG.DVDCentral.PL.pdb
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\WMG.DVDCentral.PL.genruntimeconfig.cache
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.PL\obj\Debug\net7.0\ref\WMG.DVDCentral.PL.dll

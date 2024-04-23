@@ -1,0 +1,10 @@
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\bin\Debug\WMG.DVDCentral.DB.dacpac
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\bin\Debug\WMG.DVDCentral.DB.dll
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\bin\Debug\WMG.DVDCentral.DB.pdb
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\obj\Debug\WMG.DVDCentral.DB.sqlproj.AssemblyReference.cache
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\obj\Debug\Model.xml
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\obj\Debug\refactor.xml
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\obj\Debug\postdeploy.sql
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\obj\Debug\predeploy.sql
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\obj\Debug\WMG.DVDCentral.DB.dll
+C:\Users\INTEL4400\source\repos\DVDCentral\WMG.DVDCentral.DB\obj\Debug\WMG.DVDCentral.DB.pdb

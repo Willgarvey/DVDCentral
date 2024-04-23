@@ -1,0 +1,109 @@
+﻿@model WMG.DVDCentral.UI.ViewModels.OrderDetailsVM
+@{
+    ViewData["Title"] = "Details for Order # " + Model.Order.Id;
+}
+<div class="row">
+    <div class="col m-2">
+        <dl class="row m-2">
+            <dt class = "col-sm-6">
+                @Html.DisplayNameFor(model => model.Customer.FullName)
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.Customer.FullName)
+            </dd>
+            <dt class = "col-sm-6">
+                @Html.DisplayNameFor(model => model.User.UserName)
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.User.UserName)
+            </dd>
+            <dt class = "col-sm-6">
+                @Html.DisplayNameFor(model => model.Order.OrderDate)
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.Order.OrderDate)
+            </dd>
+            <dt class = "col-sm-6">
+                @Html.DisplayNameFor(model => model.Order.ShipDate)
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.Order.ShipDate)
+            </dd>
+        </dl>
+    </div>
+    <div class="col m-2">
+        <dl class="row m-2">
+            <dt class="col-sm-6">
+                Subtotal
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Order.TotalCost)
+            </dd>
+            <dt class="col-sm-6">
+                Tax
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Order.Tax)
+            </dd>
+            <dt class="col-sm-6">
+                Total
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Order.Total)
+            </dd>
+            <dt class="col-sm-6">
+                User Full Name
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.User.LastName), @Html.DisplayFor(model => model.User.FirstName)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <!-- No Heading here for Movie Image-->
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movies[0].Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Order.OrderItems[0].Quantity)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Order.OrderItems[0].Cost)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Order.OrderItems)
+                {
+                    <tr>
+                        <td>
+                            <img src="~/images/@Model.Movies.FirstOrDefault(m => m.Id == item.MovieId)?.ImagePath"
+                                 class="imagepropsmall"
+                                 onclick="on('/images/@Model.Movies.FirstOrDefault(m => m.Id == item.MovieId)?.ImagePath')"
+                                 alt="@Model.Movies.FirstOrDefault(m => m.Id == item.MovieId)?.Description" />
+                            
+                        </td>
+                        <td>
+                            @Model.Movies.FirstOrDefault(m => m.Id == item.MovieId)?.Title
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Cost)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="m-2">
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Order.Id  }) |
+    <a asp-action="Index">Back to List</a>
+</div>

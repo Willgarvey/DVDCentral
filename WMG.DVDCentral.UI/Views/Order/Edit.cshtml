@@ -1,0 +1,49 @@
+﻿@model WMG.DVDCentral.UI.ViewModels.OrderDetailsVM
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Order.CustomerId" class="control-label"></label>
+                <input asp-for="Order.CustomerId" class="form-control" />
+                <span asp-validation-for="Order.CustomerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order.OrderDate" class="control-label"></label>
+                <input asp-for="Order.OrderDate" class="form-control" />
+                <span asp-validation-for="Order.OrderDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order.ShipDate" class="control-label"></label>
+                <input asp-for="Order.ShipDate" class="form-control" />
+                <span asp-validation-for="Order.ShipDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order.UserId" class="control-label"></label>
+                <input asp-for="Order.UserId" class="form-control" />
+                <span asp-validation-for="Order.UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+
+
+                <div>
+                    <input type="submit" value="Save" class="btn btn-sm btn-primary m-2" />
+                    <a class="btn btn-sm btn-primary m-2" asp-action="Index">Back to List</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>
+        <partial name="_OrderItemsPartial" model="Model" /> <!-- Adding a partial into a page -->
+    </div>
+    
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

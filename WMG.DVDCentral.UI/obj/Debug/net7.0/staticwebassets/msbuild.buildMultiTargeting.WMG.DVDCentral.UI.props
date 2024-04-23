@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WMG.DVDCentral.UI.props" />
+</Project>

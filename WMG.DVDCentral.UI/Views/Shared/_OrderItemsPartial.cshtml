@@ -1,0 +1,48 @@
+﻿@model WMG.DVDCentral.UI.ViewModels.OrderDetailsVM
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Movies[0].Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Order.OrderItems[0].Quantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Order.OrderItems[0].Cost)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Order.OrderItems)
+            {
+                <tr>
+                    <td>
+                        @Model.Movies.FirstOrDefault(m => m.Id == item.MovieId)?.Title
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cost)
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-primary" asp-controller="OrderItem" asp-route-id="@item.Id" asp-action="Remove">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div> 
+
+<script type="text/javascript" class="init">
+    jQuery.noConflict(); // Keep this line
+    jQuery(document).ready(function ($) {
+        $('#students').DataTable({
+            "lengthMenu": [[5, 10, 25, 30, -1], [5, 10, 25, 30, "All"]]
+        });
+    });
+</script>

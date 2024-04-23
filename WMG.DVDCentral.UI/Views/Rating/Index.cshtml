@@ -1,0 +1,37 @@
+﻿@model IEnumerable<WMG.DVDCentral.BL.Models.Rating>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<p>
+    <a asp-action="Create">Create New</a>
+    <a asp-action="Insert">Insert New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+@* Added for API *@
+                    <a asp-action="Update" asp-route-id="@item.Id">Update</a>
+                    <a asp-action="GetOne" asp-route-id="@item.Id">GetOne</a>
+                    <a asp-action="Remove" asp-route-id="@item.Id">Remove</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

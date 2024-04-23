@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WMG.DVDCentral.BL.Models.Movie>
+
+@{
+    ViewData["Title"] = "IndexCard";
+}
+
+<p>
+    <a class="btn btn-sm btn-primary m-2" asp-action="Create">Create New</a>
+</p>
+
+<div class="row">
+    @foreach(var item in Model) 
+    {
+        <div class="col-sm-4">
+            <div class="card mb-2">
+                <div class="card-header bg-dark">
+                    <h3 class="text-light">@Html.DisplayFor(modelItem => item.Title)</h3>
+                </div>
+                <div class="card-body">
+                        <img src="~/images/@item.ImagePath"
+                             class="card-img"
+                             onclick="on('/images/@item.ImagePath')"
+                             alt="@item.Description" />
+                    <h5>@Html.DisplayFor(modelItem => item.RatingName)</h5>
+                    <h5>@Html.DisplayFor(modelItem => item.DirectorName)</h5>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-sm btn-primary" asp-route-id="@item.Id" asp-action="Edit">Edit</a>
+                    <a class="btn btn-sm btn-primary" asp-route-id="@item.Id" asp-action="Details">Details</a>
+                    <a class="btn btn-sm btn-primary" asp-route-id="@item.Id" asp-action="Delete">Delete</a>
+                    <input class="btn btn-sm btn-primary" type="button" onclick="AddToCart(@item.Id)" value="+" />
+                </div>
+            </div>  
+        </div>   
+    }
+</div>
